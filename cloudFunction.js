@@ -22,7 +22,7 @@ subscribeMessage = async (event) => {
 
 async function sendVerificationEmail(email, token) {
 
-    const verificationLink = `http://${process.env.DOMAIN_NAME}.:8080/v1/user/verify?token=${token}&email=${email}`;
+    const verificationLink = `http://${process.env.DOMAIN_NAME}:8080/v1/user/verify?token=${token}&email=${email}`;
 
     const data = {
       from: "Excited User <noreply@manikanta.me>",
